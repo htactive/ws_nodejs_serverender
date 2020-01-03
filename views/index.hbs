@@ -1,0 +1,18 @@
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <h1>Home page</h1>
+    <h2>Welcome {{homeData.name}}</h2>
+    {{#if homeData.showGender}}
+    <h3>Gender: {{homeData.gender}}</h3>
+    {{/if}}<ul>
+    {{#each homeData.favorites}}
+    <li>{{@index}}-{{this}}</li>
+    {{/each}}</ul>
+    <h4>Favorites String: {{joinArr homeData.favorites}}</h4>
+    <p class="lead">Use this document as a way to quickly start any new project.
+      <br> All you get is this text and a mostly barebones HTML document.</p>
+  </div>
+
+</main>
+<!-- /.container -->
